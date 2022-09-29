@@ -16,10 +16,10 @@
     </header>
     <main>
         <section>
-            <h1>Elementos Básicos</h1>
+            <h2>Elementos Básicos</h2>
 
             <article>
-                <h1>Estructura</h1>
+                <h2>Estructura</h2>
                 <div class="contenedor">
                     <div class="etiquetas">
                         &lt;!DOCTYPE html&gt; Establece la interpretación del documento en HTML5<br>
@@ -32,7 +32,7 @@
             </article>
         </section>
         <section>
-            <h1>Elementos de texto</h1>
+            <h2>Elementos de texto</h2>
             <article>
                 <h2>Cabeceras</h2>
                 <div class="contenedor">
@@ -74,7 +74,7 @@
                         <q> &lt;q&gt; Texto corto citado &lt;/q&gt;</q><br>
                         <blockquote> &lt;blockquote&gt; Texto largo citado &lt;/blockquote&gt;</blockquote><br>
                         <pre> &lt;pre&gt;Texto PRE     Formateado &lt;/pre&gt;</pre>
-    
+
                     </div>
                 </div>
             </article>
@@ -93,15 +93,108 @@
             </article>
         </section>
         <section>
-            <h1>Formularios</h1>
             <article>
+                <h2>Formularios</h2>
                 <div class="contenedor">
                     <div class="etiquetas">
-                        &lt;form&gt; Define un formulario &lt;form&gt;
+                        &lt;form&gt; Define un formulario &lt;/form&gt;
                     </div>
                     <div class="atributos">
                         <p><code>method="[GET||POST]"</code> Establece el método usado para enviar la información</p>
                         <p><code>action="[PAGINA]"</code> Establece el dónde se mandará la información</p>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        &lt;label&gt; Define una etiqueta para un input &lt;/label&gt;
+                    </div>
+                    <div class="atributos">
+                        <p><code>for="[ID]"</code>Especifica el input con el que debe estar la etiqueta</p>
+                        <p><code>form="[ID]"</code>Especifica el form con el que debe estar la etiqueta</p>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        &lt;input&gt; Define un campo de introducción de datos &lt;/input&gt;
+                    </div>
+                    <div class="atributos">
+                        <p><code>type="<a href="https://www.w3schools.com/tags/tag_input.asp">Tipos</a>"</code>
+                            Establece el tipo de información a pedir (Text por defecto)</p>
+                        <!--
+
+                            <input type="button">
+                            <input type="checkbox">
+                            <input type="color">
+                            <input type="date">
+                            <input type="datetime-local">
+                            <input type="email">
+                            <input type="file">
+                            <input type="hidden">
+                            <input type="image">
+                            <input type="month">
+                            <input type="number">
+                            <input type="password">
+                            <input type="radio">
+                            <input type="range">
+                            <input type="reset">
+                            <input type="search">
+                            <input type="submit">
+                            <input type="tel">
+                            <input type="text"> (default value)
+                            <input type="time">
+                            <input type="url">
+                            <input type="week">
+
+                        -->
+                        <p><code>name="[NOMBRE]"</code>Nombre que identifica el input</p>
+                        <p><code>value="[VALOR_POR_DEFECTO]"</code>Establece el valor por defecto del input</p>
+                        <p><code>min="[NÚMERO]" max="[NÚMERO]" step="[NÚMERO]"</code>Establece el mínimo, máximo y
+                            cuanto avanza de un input number</p>
+                        <p><code>list="[#ID_DATALIST]"</code>Establece inputs similares en base a un datalist</p>
+                        <p><code>required</code> Establece si es un input obligatorio</p>
+                        <p><code>autofocus</code> Establece el foco en el input cuando carga la página</p>
+                        <p><code>disabled</code> Establece el input en desactivado</p>
+                        <p><code>placeholder=[VALOR]</code> Establece un valor por defecto en el input</p>
+                        <p><code>minlength/maxlength="[NÚMERO_DE_CARACTERES]"</code>Establece el mínimo/máximo de letras
+                            de un input tipo text</p>
+                        <p><code>pattern=[EXPRESION_REGULAR]</code> Establece la validez de un input tipo text mediante
+                            una expresión regular</p>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        &lt;textarea&gt; Define un área de texto &lt;/select&gt;
+                    </div>
+                    <div class="atributos">
+                        <p><code>name="[NOMBRE]"</code>Nombre que identifica el textarea</p>
+                        <p><code>rows="[#NÚMERO]" cols="[#NÚMERO]"</code>Establece tamaño en filas y columnas del textarea</p>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        &lt;button&gt; Define un botón &lt;/select&gt;
+                    </div>
+                    <div class="atributos">
+                        <p><code>type="button"</code>Le dice al navegador de interpretar el button como un button</p>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        &lt;select&gt; Define un campo lista con diferentes opciones &lt;/select&gt;
+                        &lt;option&gt; Define una opción en la lista&lt;option&gt;
+                    </div>
+                    <div class="atributos">
+                        <p><code>name="[NOMBRE]"</code>Nombre que identifica el select</p>
+                        <p><code>value="[VALOR]"</code>Establece el valor por defecto del option</p>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        &lt;datalist&gt; Define una lista de recomendaciones de un input &lt;/select&gt;
+                        &lt;option&gt; Define una opción en la lista&lt;option&gt;
+                    </div>
+                    <div class="atributos">
+                        <p><code>value="[VALOR]"</code>Establece el valor del option</p>
                     </div>
                 </div>
             </article>
