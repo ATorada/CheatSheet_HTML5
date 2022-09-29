@@ -1,0 +1,31 @@
+header h1,h2 {
+    display: inline-block;
+}
+
+section h1 {
+    font-size: 2em;
+}
+
+section {
+    border: 1px solid black;
+}
+
+article {
+    border: 1px solid red;
+    text-align: center;
+
+}
+
+.contenedor {
+    display: flex;
+}
+
+.etiquetas {
+    border: 1px solid blue;
+    width: 50%;
+}
+
+.atributos {
+    border: 1px solid blue;
+    width: 50%;
+}
