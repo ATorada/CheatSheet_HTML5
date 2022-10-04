@@ -12,10 +12,16 @@
 <body>
     <header>
         <h1>HTML5</h1>
-        <h2>CheatSheet</h2>
+        <h2>✨ CheatSheet ✨</h2>
+        <nav>
+            <a href="#elementosBasicos">Elementos Básicos</a>
+            <a href="#elementosTexto">Elementos de Texto</a>
+            <a href="#elementosOrganizacion">Elementos de organización e introducción</a>
+            <a href="#elementosInsertados">Elementos insertados</a>
+        </nav>
     </header>
     <main>
-        <section>
+        <section id="elementosBasicos">
             <h1>Elementos Básicos</h1>
 
             <article>
@@ -27,17 +33,50 @@
                         <span>head</span> Establece el título u otra información que no se muestra <span
                             class="cerrar">head</span> <br>
                         <span>title</span> Establece el título de la página <span class="cerrar">title</span> <br>
-                        <span>body</span> Establece la parte visible del documento <span class="cerrar">body</span> <br>
+                        <span>body</span> Establece la parte visible del documento <span class="cerrar">body</span><br>
+                        <span>header</span> Establece una cabecera <span class="cerrar">header</span> <br>
+                        <span>aside</span> Establece un elemento lateral <span class="cerrar">aside</span> <br>
+                        <span>section</span> Establece una sección <span class="cerrar">section</span> <br>
+                        <span>article</span> Establece un artículo de una sección <span class="cerrar">article</span>
+                        <br>
+                        <span>footer</span> Establece un pie de página <span class="cerrar">footer</span> <br>
+                        <span>address</span> Establece una dirección <span class="cerrar">address</span> <br>
+                    </div>
+                </div>
+
+                <h2>Atributos globales básicos</h2>
+                <div class="contenedor">
+                    <div class="atributos">
+                        <p><code>style="propiedad:valor"</code> Establece estilos</p>
+                        <p title="Ejemplo"><code>title="Título"</code> Establece un título cuando pasamos el ratón por
+                            encima del elemento</p>
+                        <p><code>id="[ID]"</code> Establece un ID único a la etiqueta</p>
+                        <p><code>class="[clase]"</code> Establece una clase a la etiqueta</p>
+                        <p><code>accesskey="[tecla]"</code> Establece un hotkey de focus al elemento</p>
+                        <p contenteditable="true"><code>contenteditable="[true || false]"</code> Establece si un
+                            elemento se puede editar</p>
+                        <p><code>dir="[rtl || ltr || auto]"</code> Establece en que dirección se escribe el contenido
+                        </p>
+                        <p draggable="true"><code>draggable="[true || false || auto]"</code> Establece si un contenido
+                            es draggeable o no</p>
+                        <p><code>hidden</code> Establece si un elemento está oculto</p>
+                        <p><code>lang="[Language]"</code> Establece el idioma de un elemento</p>
+                        <p><code>spellcheck="[true || false]"</code> Establece si al editar un elemento se comprueba la
+                            gramática/vocabulario</p>
+                        <p><code>tabindex="[NUMERO]"</code> Establece la prioridad de la tabulación</p>
+                        <p><code>translate="[yes || no]"</code> Establece si un elemento tiene que ser traducido o no
+                        </p>
                     </div>
                 </div>
             </article>
         </section>
-        <section>
+        <section id="elementosTexto">
             <h1>Elementos de texto</h1>
             <article>
                 <h2>Cabeceras</h2>
                 <div class="contenedor">
                     <div class="etiquetas">
+                        <h1> <span>hgroup</span> Grupo de cabeceras <span class="cerrar">hgroup</span> </h1><br>
                         <h1> <span>h1</span> Cabecera 1 <span class="cerrar">h1</span> </h1><br>
                         <h2> <span>h2</span> Cabecera 2 <span class="cerrar">h2</span> </h2><br>
                         <h3> <span>h3</span> Cabecera 3 <span class="cerrar">h3</span> </h3><br>
@@ -66,6 +105,7 @@
                 <div class="contenedor">
                     <div class="etiquetas">
                         <mark> <span>mark</span> Texto markado <span class="cerrar">mark</span></mark><br>
+                        <p><span>span</span> Texto específico <span class="cerrar">span</span></p>
                         <strong> <span>strong</span> Texto importante <span class="cerrar">strong</span></strong><br>
                         <dfn> <span>dfn</span> Texto de elemento a definir <span class="cerrar">dfn</span></dfn><br>
                         <em> <span>em</span> Texto enfatizado <span class="cerrar">em</span></em><br>
@@ -92,9 +132,18 @@
                     </div>
                 </div>
             </article>
+            <article>
+                <h2>Otros</h2>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        <span>br</span> Salto de línea <br>
+                        <span>hr</span> Línea de separación <br>
+                    </div>
+                </div>
+            </article>
         </section>
-        <section>
-            <h1>Elementos de texto</h1>
+        <section id="elementosOrganizacion">
+            <h1>Organización e introducción de datos</h1>
             <article>
                 <h2>Formularios</h2>
                 <div class="contenedor">
@@ -202,14 +251,30 @@
                         <p><code>value="[VALOR]"</code>Establece el valor del option</p>
                     </div>
                 </div>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        <span>details</span> Define un conjunto que se puede mostrar y ocultar <span
+                            class="cerrar">details</span> <br>
+                        <span>summary</span> Define la parte visible del conjunto <span class="cerrar">summary</span>
+                        <br>
+                    </div>
+                    <div class="atributos">
+                        <p><code>open</code>Establece si el conjunto está oculto o no por defecto</p>
+                    </div>
+                    <div class="ejemplo">
+                        <details>
+                            <summary>Ejemplo</summary>
+                            <p>Ocultísimo</p>
+                        </details>
+                    </div>
+                </div>
             </article>
-        </section>
-        <section>
             <article>
                 <h2>Tablas</h2>
                 <div class="contenedor">
                     <div class="etiquetas">
                         <span>table</span> Crea una tabla <span class="cerrar">table</span><br>
+                        <span>caption</span> Establece el título de la tabla <span class="cerrar">caption</span><br>
                         <span>thead</span> Crea la cabecera de una tabla <span class="cerrar">thead</span> <br>
                         <span>tbody</span> Crea el cuerpo de una tabla <span class="cerrar">tbody</span> <br>
                         <span>tfoot</span> Crea el pie de una tabla <span class="cerrar">tfoot</span> <br>
@@ -219,6 +284,7 @@
                     </div>
                     <div class="ejemplo">
                         <table>
+                            <caption>Título de la tabla</caption>
                             <thead>
                                 <tr>
                                     <th>Cabecera 1</th>
@@ -241,8 +307,6 @@
                     </div>
                 </div>
             </article>
-        </section>
-        <section>
             <article>
                 <h2>Listas</h2>
                 <div class="contenedor">
@@ -268,7 +332,33 @@
                 </div>
             </article>
         </section>
+        <section id="elementosInsertados">
+            <h1>Elementos insertados</h1>
+            <article>
+                <div class="contenedor">
+                    <div class="etiquetas">
+                        <span>img</span> Permite insertar una imagen <span class="cerrar">img</span><br>
+                        <span>iframe</span> Permite insertar un documento html <span class="cerrar">iframe</span>
+                    </div>
+                    <div class="atributos">
+                        <p><code>src="[ENLACE/DIRECCIÓN]"</code> Establece la localización del recurso</p>
+                        <p><code>alt="[TEXTO]"</code> Establece texto que se mostrará en caso de no tener el recurso</p>
+                        <p><code>width="[NÚMERO]" height="[NÚMERO]"</code> Establece el ancho y alto de la imagen</p>
+                    </div>
+                    <div class="ejemplo">
+                        <img src="img/cathulhu.jpg" alt="Cathulhu" width="300px" height="300px">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12318.937441223134!2d-0.34412057281700903!3d39.475333784994945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60f0b2511761b5%3A0x40747fcf97fa41e9!2sIES%20Serpis!5e0!3m2!1ses!2ses!4v1664894328370!5m2!1ses!2ses"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
+    <footer>
+        <address>IES SERPIS Ángel Torada</address>
+    </footer>
 </body>
 
 </html>
